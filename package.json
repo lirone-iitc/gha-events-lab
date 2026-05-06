@@ -1,0 +1,11 @@
+{
+  "name": "events-filtering-lab",
+  "version": "1.0.0",
+  "description": "Starter project for the GitHub Actions Events & Filtering lab",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
