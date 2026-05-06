@@ -50,7 +50,8 @@ jobs:
           node-version: '20'
 
       - name: Print PR title
-        run: echo "PR check running for: ${{ github.event.pull_request.title }}"
+        run: |
+          echo "PR check running for: ${{ github.event.pull_request.title }}"
 
       - name: Install dependencies
         run: npm install
@@ -64,4 +65,5 @@ jobs:
     if: github.event_name == 'workflow_dispatch'
     steps:
       - name: Print target environment
-        run: echo "Deploying to: ${{ github.event.inputs.environment }}"
+        run: |
+          echo "Deploying to: ${{ github.event.inputs.environment }}"
